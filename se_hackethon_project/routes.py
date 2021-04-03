@@ -206,10 +206,10 @@ def detect_posture():
 @app.route("/inspect", methods=['GET', 'POST'])
 @login_required
 def analyze_posture():
-    # f1 = 0
-    # f2 = 0
-    # f3 = 0
-    # f4 = 0
+    f1 = 0
+    f2 = 0
+    f3 = 0
+    f4 = 0
     data = []
     if request.method == "POST":
         # getting input with name = fname in HTML form
